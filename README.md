@@ -162,8 +162,8 @@ def test_broadcast_index():
 ## 2.3: Tensor Operations
 
 1. The TODOs in **tensor_ops.py** are mislabeled, as map/zip/reduce are for 2.3, not 2.2.
-1. The start of make_tensor_backend instantiates some mapped/zipped functions for you.
-1. You'll probably need to call broadcast_index broadcasting from the larger output shape to the smaller input shape(s).
+1. The start of `make_tensor_backend` instantiates some mapped/zipped functions for you.
+1. You'll probably need to call `broadcast_index` broadcasting from the larger output shape to the smaller input shape(s).
 
 ## 2.4: Gradients and Autograd
 
@@ -196,7 +196,7 @@ env =
     NUMBA_DISABLE_JIT=1
 ```
 
-1. If you're getting errors about `strides_from_shape` (or potentially other functions) not being found, it's because the starter code isn't set up to JIT compile them. In my case, I was calling `strides_from_shape` within my implementation of `to_index` (which is JIT compiled), so rewriting `to_index` so that it doesn't use `strides_from_shape` fixes this.
+5. If you're getting errors about `strides_from_shape` (or potentially other functions) not being found, it's because the starter code isn't set up to JIT compile them. In my case, I was calling `strides_from_shape` within my implementation of `to_index` (which is JIT compiled), so rewriting `to_index` so that it doesn't use `strides_from_shape` fixes this.
 1. `Untyped global name` errors where the name is an operator: Numba only wants you to use a limited subset of Python, it doesn't like it when you call a bunch of non-builtin or non-Numpy functions. So if in your **operators.py** you implemented functions like `neg` as `return mul(-1.0, x)`, just change it to `return -x` (and similar usages of `lt`, `neg`, etc.).
 1. Speaking of which, because we're dealing with Numpy arrays, the `==` operator returns an array of `bool`s indicating whether each value is the same or not, so we need to use `.all()` to check that they are all the same.
 
