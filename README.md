@@ -4,6 +4,34 @@ _By Gabriel Mukobi (Stanford AI Alignment)_
 
 _Created: **Aug 6, 2022**. Updated: **Aug 7, 2022**_
 
+## Contents
+- [Intro](#intro)
+  * [What is this?](#what-is-this)
+  * [Prerequisite Knowledge](#prerequisite-knowledge)
+  * [Time Commitment](#time-commitment)
+- [Module 0: Fundamentals](#module-0-fundamentals)
+  * [0.0: Get started on Minitorch](#00-getting-started-on-minitorch)
+  * [0.1-0.4: Common issues](#01-04-common-issues)
+- [Module 1: Autodiff](#module-1-autodiff)
+  * [1.1: Numerical Derivatives](#11-numerical-derivatives)
+  * [1.2: Scalars](#12-scalars)
+  * [1.3: Chain Rule](#13-chain-rule)
+  * [1.4: Backpropagation](#14-backpropagation)
+  * [1.5: Training](#15-training)
+- [Module 2: Tensors](#module-2-tensors)
+  * [2.1: Tensor Data - Indexing](#21-tensor-data---indexing)
+  * [2.2: Tensor Broadcasting](#22-tensor-broadcasting)
+  * [2.3: Tensor Operations](#23-tensor-operations)
+  * [2.4: Gradients and Autograd](#24-gradients-and-autograd)
+  * [2.5: Training](#25-training)
+- [Module 3: Efficiency](#module-3-efficiency)
+  * [3.1: Parallelization](#31-parallelization)
+  * [3.2: Matrix Multiplication](#32-matrix-multiplication)
+  * [3.3: CUDA Operations](#33-cuda-operations)
+  * [3.4: CUDA Matrix Multiplication](#34-cuda-matrix-multiplication)
+  * [3.5: Training](#35-training)
+- [Module 4: Networks](#module-4-networks)
+
 # Intro
 
 ## What is this?
@@ -29,7 +57,7 @@ _Created: **Aug 6, 2022**. Updated: **Aug 7, 2022**_
 
 > This introductory module is focused on introducing several core technologies used for testing and debugging in future modules, and also includes some basic mathematical foundations. In this module, you will start to build up some of the infrastructure for MiniTorch.
 
-## 0.0: Get started on Minitorch
+## 0.0: Getting started on Minitorch
 
 1. Open <https://minitorch.github.io/>
 2. Read through the **Setup**, the **ML Primer**, and the guides for **Fundamentals** (guides are listed in the sidebar of the webpage on a computer).
