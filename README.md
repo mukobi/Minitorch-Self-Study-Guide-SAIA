@@ -2,7 +2,7 @@
 
 _By Gabriel Mukobi (Stanford AI Alignment)_
 
-_Created: **Aug 6, 2022**. Updated: **Aug 7, 2022**_
+_Created: **Aug 6, 2022**. Updated: **Oct 9, 2022**_
 
 ## Contents
 - [Intro](#intro)
@@ -39,6 +39,7 @@ _Created: **Aug 6, 2022**. Updated: **Aug 7, 2022**_
 - [Minitorch](https://minitorch.github.io/): Reimplement the core functionality of the popular PyTorch machine learning library in Python.
 - Similar things to parts of this (particularly Autodiff) are done in Redwood Research’s [MLAB](https://www.alignmentforum.org/posts/3ouxBRRzjxarTukMW/apply-to-the-second-iteration-of-the-ml-for-alignment) curriculum (“Implement a simple clone of some of Pytorch, with particular focus on the implementation of backpropagation”).
 - Minitorch is a bit outdated and some of the instructions are unclear, so this guide should help speed you past the annoying stuff so you can efficiently complete the actual learning.
+- _Note: As of Oct 9, 2022, Minitorch has been updated with many changes that presumably fix many of the issues indicated here. If using the updated version, be advised that not all the notes here may apply—though the conceptual ones about how to approach the problems might still be useful._
 
 ## Prerequisite Knowledge
 
@@ -208,7 +209,11 @@ env =
 
 ## 3.3: CUDA Operations
 
+TODO
+
 ## 3.4: CUDA Matrix Multiplication
+
+TODO
 
 ## 3.5: Training
 
@@ -216,4 +221,4 @@ TODO
 
 # [Module 4: Networks](https://minitorch.github.io/module4.html)
 
-TODO
+No longer maintained in the Minitorch project, and not as necessary to learn (you can learn it elsewhere).
